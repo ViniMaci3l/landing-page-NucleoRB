@@ -22,12 +22,18 @@ npm run lint
 npm run build
 ```
 
+## Assets reais usados
+
+- `/assets/logo.png`: header e rodape.
+- `/assets/renata1.jpeg`: composicao visual da hero section.
+- `/assets/renata2.jpeg`: secao Dra. Renata Bogea.
+- `/assets/favicon.svg`: favicon do site.
+- `/assets/icons.svg`: mantido em `public/assets`, sem uso forcado.
+
 ## Conteudos pendentes
 
-O projeto nao contem atualmente assets reais vindos do Drive. A landing page foi preparada com placeholders elegantes e comentarios `TODO` nos pontos em que devem entrar:
+A landing page ainda mantem placeholders elegantes e comentarios `TODO` nos pontos em que faltam materiais reais:
 
-- video ou imagem hero da clinica;
-- foto profissional da Dra. Renata Bogea;
 - certificados, congressos, cursos, CRM e especializacoes oficiais;
 - fotos profissionais da equipe;
 - galeria real da recepcao, consultorios, spa capilar, estrutura e equipamentos;

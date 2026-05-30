@@ -27,6 +27,18 @@ function PlaceholderVisual({ label, variant = 'portrait' }) {
   )
 }
 
+function BrandLogo() {
+  return (
+    <img
+      className="brand-logo"
+      src="/assets/logo.png"
+      alt="Nucleo RB - Dra. Renata Bogea"
+      width="813"
+      height="784"
+    />
+  )
+}
+
 function SectionIntro({ eyebrow, title, text, dark = false }) {
   return (
     <div className={`section-intro reveal ${dark ? 'dark' : ''}`}>
@@ -41,7 +53,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Nucleo RB">
-        <span className="brand-mark">RB</span>
+        <BrandLogo />
         <span>
           Nucleo RB
           <small>Dra. Renata Bogea</small>
@@ -63,9 +75,16 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="hero-section">
-      {/* TODO: substituir por video real da clinica ou atendimento da Dra. Renata quando o asset estiver no projeto. */}
       <div className="hero-media" aria-hidden="true">
-        <div className="cinema-panel panel-a" />
+        <figure className="hero-portrait-frame panel-a">
+          <img
+            src="/assets/renata1.jpeg"
+            alt=""
+            width="853"
+            height="1280"
+            loading="eager"
+          />
+        </figure>
         <div className="cinema-panel panel-b" />
         <div className="cinema-panel panel-c" />
         <div className="slow-scan" />
@@ -129,8 +148,15 @@ function DoctorSection() {
         </div>
       </div>
       <div className="doctor-card reveal">
-        {/* TODO: substituir por foto profissional real da Dra. Renata Bogea. */}
-        <PlaceholderVisual label="Foto profissional da Dra. Renata" />
+        <figure className="doctor-photo-frame">
+          <img
+            src="/assets/renata2.jpeg"
+            alt="Dra. Renata Bogea em imagem institucional do Nucleo RB"
+            width="853"
+            height="1280"
+            loading="lazy"
+          />
+        </figure>
         <div className="certificate-rail">
           {/* TODO: inserir certificados reais, congressos e especializacoes quando os arquivos oficiais forem adicionados. */}
           {['Certificacao oficial', 'Congresso validado', 'Especializacao'].map(
@@ -453,7 +479,7 @@ function Footer() {
     <footer className="site-footer">
       <div>
         <a className="brand" href="#top" aria-label="Nucleo RB">
-          <span className="brand-mark">RB</span>
+          <BrandLogo />
           <span>
             Nucleo RB
             <small>Dra. Renata Bogea</small>

@@ -561,13 +561,37 @@ function Footer() {
 
 function FloatingActions() {
   return (
-    <div className="floating-actions" aria-label="Acoes rapidas">
-      <a href={whatsappWithMessage(quickMessage)}>WhatsApp</a>
-      <a href="#agenda">Agendar</a>
-      <a href={whatsappWithMessage('Olá, equipe Núcleo RB. Gostaria de saber como chegar à clínica.')}>
-        Como chegar
+    <nav className="floating-actions" aria-label="Ações rápidas">
+      <a
+        className="floating-action primary-action"
+        href={whatsappWithMessage(quickMessage)}
+        aria-label="Falar com a equipe do Núcleo RB pelo WhatsApp"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M20 11.5a7.5 7.5 0 0 1-11.1 6.58L4 19.5l1.42-4.87A7.5 7.5 0 1 1 20 11.5Z" />
+          <path d="M9.2 8.5c.3 2.25 2.05 4 4.3 4.3" />
+        </svg>
+        <span>WhatsApp</span>
       </a>
-    </div>
+      <a className="floating-action" href="#agenda" aria-label="Ir para a seção de agendamento">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <rect x="4" y="6" width="16" height="14" rx="2" />
+          <path d="M8 3v6M16 3v6M4 10h16M8 14h3M13 14h3M8 17h3" />
+        </svg>
+        <span>Agendar</span>
+      </a>
+      <a
+        className="floating-action"
+        href={whatsappWithMessage('Olá, equipe Núcleo RB. Gostaria de saber como chegar à clínica.')}
+        aria-label="Solicitar informações de como chegar ao Núcleo RB"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+          <circle cx="12" cy="10" r="2.25" />
+        </svg>
+        <span>Como chegar</span>
+      </a>
+    </nav>
   )
 }
 

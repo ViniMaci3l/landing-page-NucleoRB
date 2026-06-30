@@ -27,17 +27,14 @@ npm run build
 - `/assets/logo.png`: header e rodape.
 - `/assets/renata1.jpeg`: composicao visual da hero section.
 - `/assets/renata2.jpeg`: secao Dra. Renata Bogea.
+- `/assets/nrb1.jpeg` a `/assets/nrb5.jpeg`: primeiras cinco fotos da equipe.
 - `/assets/favicon.svg`: favicon do site.
 - `/assets/icons.svg`: mantido em `public/assets`, sem uso forcado.
 
 ## Conteudos pendentes
 
-A landing page ainda mantem placeholders elegantes e comentarios `TODO` nos pontos em que faltam materiais reais:
+A landing page ainda mantem placeholders elegantes nos pontos em que faltam materiais reais:
 
-- certificados, congressos, cursos, CRM e especializacoes oficiais;
-- fotos profissionais da equipe;
-- galeria real da recepcao, consultorios, spa capilar, estrutura e equipamentos;
-- endereco oficial e mapa;
+- fotos profissionais de Claudia Soares, Rafaela Serpa e Dra. Maria Nunes;
+- endereco oficial e mapa, caso sejam adicionados futuramente;
 - IDs reais de Google Tag Manager, Google Analytics e Meta Pixel.
-
-Nao foram inventados CRM, endereco, certificacoes, depoimentos ou antes/depois.

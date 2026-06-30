@@ -110,9 +110,9 @@ function Hero() {
           naturalidade.
         </h1>
         <p className="hero-subtitle">
-          No Núcleo RB, ciência, recursos avançados e cuidado individualizado se unem em
+          No Núcleo RB, ciência, tecnologias avançadas e cuidado individualizado se unem em
           protocolos premium para terapia hormonal, longevidade, medicina
-          regenerativa e estética sofisticada.
+          regenerativa, emagrecimento e estética sofisticada.
         </p>
         <div className="hero-actions">
           <a className="btn primary" href="#agenda">
@@ -209,7 +209,7 @@ function TechnologiesSection() {
         dark
         eyebrow="Recursos avançados"
         title="Recursos avançados a serviço de planos individualizados."
-        text="Protocolos, métodos e recursos selecionados conforme avaliação clínica, objetivos individuais e necessidades de cada paciente."
+        text="Recursos hormonais, regenerativos, metabólicos, capilares e estéticos selecionados conforme avaliação clínica."
       />
       <div className="tech-grid">
         {technologies.map((item, index) => (
@@ -552,8 +552,7 @@ function Footer() {
       <div>
         <h3>Funcionamento</h3>
         <p>Segunda a sexta, 08h as 20h.</p>
-        <p>Endereço pendente de validação nos materiais oficiais.</p>
-        {/* TODO: inserir endereço real e mapa Google somente após validação oficial. */}
+        <p>Atendimento mediante agendamento pela equipe.</p>
       </div>
     </footer>
   )

@@ -37,23 +37,17 @@ export const technologies = [
   {
     name: 'Emagrecimento',
     description:
-      'Protocolos de emagrecimento direcionados ao suporte metabólico, vitalidade, performance e melhora da composição corporal, sempre com avaliação individualizada.',
+      'Protocolos de emagrecimento direcionados ao suporte metabólico, vitalidade e performance, com foco em saúde, equilíbrio e acompanhamento individualizado.',
     tone: 'metabolic',
   },
   {
-    name: 'Peptídeos',
-    description:
-      'Protocolos integrativos para vitalidade, suporte metabólico e performance, definidos conforme indicação clínica individual.',
-    tone: 'cellular',
-  },
-  {
-    name: 'Terapias regenerativas',
+    name: 'Terapia regenerativa',
     description:
       'Recursos avançados voltados ao estímulo biológico, recuperação, qualidade tecidual e saúde capilar.',
     tone: 'regenerative',
   },
   {
-    name: 'Tratamentos capilares',
+    name: 'Tratamento capilar',
     description:
       'Avaliação individualizada e recursos terapêuticos direcionados à saúde do couro cabeludo, fortalecimento e densidade capilar.',
     tone: 'hair',
@@ -63,6 +57,12 @@ export const technologies = [
     description:
       'Experiência terapêutica para o cuidado do couro cabeludo, integrada a protocolos personalizados em ambiente premium.',
     tone: 'spa',
+  },
+  {
+    name: 'Harmonização avançada',
+    description:
+      'Planejamento estético criterioso para realçar proporções, qualidade da pele e naturalidade, integrado à saúde e à individualidade.',
+    tone: 'skin',
   },
 ]
 
@@ -164,19 +164,19 @@ export const team = [
     name: 'Claudia Soares',
     role: 'Nutricionista',
     image: '',
-    bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
+    bio: 'Acompanhamento nutricional integrado aos protocolos de saúde, performance e bem-estar.',
   },
   {
     name: 'Rafaela Serpa',
     role: 'Nutricionista',
     image: '',
-    bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
+    bio: 'Acompanhamento nutricional integrado aos protocolos de saúde, performance e bem-estar.',
   },
   {
     name: 'Dra. Maria Nunes',
     role: 'Médica de saúde mental',
     image: '',
-    bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
+    bio: 'Cuidado em saúde mental integrado à jornada de bem-estar e individualidade do paciente.',
   },
 ]
 

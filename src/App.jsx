@@ -105,11 +105,12 @@ function Hero() {
       <div className="hero-content reveal">
         <p className="eyebrow">Saúde hormonal, longevidade e alta performance</p>
         <h1>
-          Medicina hormonal, longevidade e regeneração para quem busca saúde,
-          performance e beleza com naturalidade.
+          Terapia hormonal, menopausa, longevidade, emagrecimento e estética
+          avançada para pessoas que buscam saúde, performance e beleza com
+          naturalidade.
         </h1>
         <p className="hero-subtitle">
-          No Núcleo RB, ciência, tecnologia e cuidado individualizado se unem em
+          No Núcleo RB, ciência, recursos avançados e cuidado individualizado se unem em
           protocolos premium para terapia hormonal, longevidade, medicina
           regenerativa e estética sofisticada.
         </p>
@@ -130,6 +131,11 @@ function Hero() {
           <span>Longevidade e performance</span>
           <span>Estética com naturalidade</span>
         </div>
+      </div>
+      <div className="hero-doctor-badge reveal" aria-label="Identificação da Dra. Renata Bogéa">
+        <strong>Dra. Renata Bogéa</strong>
+        <span>CRM - MA 7768</span>
+        <small>Médica e CEO do Núcleo RB</small>
       </div>
       <div className="hero-note reveal">
         <strong>Saúde é a base da transformação.</strong>
@@ -165,17 +171,15 @@ function DoctorSection() {
     <section id="renata" className="doctor-section section-grid">
       <div className="doctor-copy reveal">
         <span className="eyebrow">Dra. Renata Bogéa</span>
-        <h2>Ciência, tecnologia e individualização em cada plano.</h2>
+        <h2>Ciência, tecnologias avançadas e individualização em cada plano.</h2>
         <p>
           A Dra. Renata Bogéa atua com foco em saúde hormonal, longevidade e
-          medicina regenerativa, unindo avaliação criteriosa, tecnologia e
+          medicina regenerativa, unindo avaliação criteriosa, recursos avançados e
           acompanhamento individualizado.
         </p>
         <p>
           A estética integra esse cuidado de forma sofisticada e natural, como
-          consequência de saúde, equilíbrio e respeito à individualidade. Dados
-          de cursos, congressos, CRM e certificações serão inseridos somente
-          após validação documental.
+          consequência de saúde, equilíbrio e respeito à individualidade.
         </p>
         <div className="badge-row">
           <span>Terapia hormonal</span>
@@ -193,17 +197,6 @@ function DoctorSection() {
             loading="lazy"
           />
         </figure>
-        <div className="certificate-rail">
-          {/* TODO: inserir certificados reais, congressos e especializações quando os arquivos oficiais forem adicionados. */}
-          {['Certificação oficial', 'Congresso validado', 'Especialização'].map(
-            (item) => (
-              <div className="certificate-card" key={item}>
-                <span>{item}</span>
-                <small>Pendente de documento real</small>
-              </div>
-            ),
-          )}
-        </div>
       </div>
     </section>
   )
@@ -214,9 +207,9 @@ function TechnologiesSection() {
     <section id="tecnologias" className="tech-section dark-band">
       <SectionIntro
         dark
-        eyebrow="Recursos e tecnologias"
-        title="Tecnologia avançada a serviço de planos individualizados."
-        text="Recursos hormonais, regenerativos, metabólicos, capilares e estéticos selecionados conforme avaliação clínica."
+        eyebrow="Recursos avançados"
+        title="Recursos avançados a serviço de planos individualizados."
+        text="Protocolos, métodos e recursos selecionados conforme avaliação clínica, objetivos individuais e necessidades de cada paciente."
       />
       <div className="tech-grid">
         {technologies.map((item, index) => (
@@ -297,7 +290,7 @@ function AboutSection() {
         dark
         eyebrow="Quem somos"
         title="Um centro premium de medicina hormonal, longevidade e regeneração."
-        text="O Núcleo RB integra ciência, tecnologia e cuidado humano em protocolos voltados à saúde, prevenção, performance e estética sofisticada."
+        text="O Núcleo RB integra ciência, soluções avançadas e cuidado humano em protocolos voltados à saúde, prevenção, performance e estética sofisticada."
       />
       <div className="about-layout">
         <figure className="about-photo reveal">
@@ -347,11 +340,18 @@ function TeamSection() {
         {team.map((person) => (
           <article className="team-card reveal" key={person.name}>
             <figure className="team-photo">
-              <img
-                src={person.image}
-                alt={`${person.name}, ${person.role} no Núcleo RB`}
-                loading="lazy"
-              />
+              {person.image ? (
+                <img src={person.image} alt={person.name} loading="lazy" />
+              ) : (
+                <div className="team-photo-placeholder" aria-label={`Foto pendente de ${person.name}`}>
+                  {person.name
+                    .replace(/^Dr\w*\.?\s+/, '')
+                    .split(' ')
+                    .slice(0, 2)
+                    .map((part) => part[0])
+                    .join('')}
+                </div>
+              )}
             </figure>
             <h3>{person.name}</h3>
             <span>{person.role}</span>
@@ -369,7 +369,7 @@ function ExperienceSection() {
       <SectionIntro
         eyebrow="Experiência da clínica"
         title="Uma jornada pensada para conforto, privacidade e precisão."
-        text="Tecnologia, acolhimento e discrição em uma experiência premium de cuidado."
+        text="Recursos avançados, acolhimento e discrição em uma experiência premium de cuidado."
       />
       <div className="gallery-grid">
         {gallery.map((item, index) => (
@@ -540,7 +540,7 @@ function Footer() {
         </a>
         <p>
           Terapia hormonal, longevidade e medicina regenerativa com experiência
-          premium, tecnologia avançada e olhar humano.
+          premium, recursos avançados e olhar humano.
         </p>
       </div>
       <div>

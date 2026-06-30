@@ -16,7 +16,7 @@ export const pillars = [
   {
     name: 'Medicina Regenerativa',
     description:
-      'Terapias avançadas com foco em regeneração, estímulo biológico, recuperação tecidual, saúde capilar, peptídeos e tecnologias de alta performance.',
+      'Terapias avançadas com foco em regeneração, estímulo biológico, recuperação tecidual, saúde capilar, peptídeos e recursos de alta performance.',
     tone: 'regenerative',
   },
   {
@@ -35,6 +35,12 @@ export const technologies = [
     tone: 'hormonal',
   },
   {
+    name: 'Emagrecimento',
+    description:
+      'Protocolos de emagrecimento direcionados ao suporte metabólico, vitalidade, performance e melhora da composição corporal, sempre com avaliação individualizada.',
+    tone: 'metabolic',
+  },
+  {
     name: 'Peptídeos',
     description:
       'Protocolos integrativos para vitalidade, suporte metabólico e performance, definidos conforme indicação clínica individual.',
@@ -49,7 +55,7 @@ export const technologies = [
   {
     name: 'Tratamentos capilares',
     description:
-      'Avaliação individualizada e tecnologias direcionadas à saúde do couro cabeludo, fortalecimento e densidade capilar.',
+      'Avaliação individualizada e recursos terapêuticos direcionados à saúde do couro cabeludo, fortalecimento e densidade capilar.',
     tone: 'hair',
   },
   {
@@ -57,24 +63,6 @@ export const technologies = [
     description:
       'Experiência terapêutica para o cuidado do couro cabeludo, integrada a protocolos personalizados em ambiente premium.',
     tone: 'spa',
-  },
-  {
-    name: 'Emagrecimento avançado',
-    description:
-      'Estratégias clínicas para saúde metabólica, composição corporal e manutenção de hábitos com acompanhamento contínuo.',
-    tone: 'metabolic',
-  },
-  {
-    name: 'Ultraformer MPT',
-    description:
-      'Tecnologia de ultrassom micro e macrofocado aplicada com planejamento para estímulo de colágeno, firmeza e contorno.',
-    tone: 'precision',
-  },
-  {
-    name: 'Bioestimuladores',
-    description:
-      'Estímulo gradual de colágeno para qualidade de pele, sustentação e contorno com abordagem natural e criteriosa.',
-    tone: 'skin',
   },
 ]
 
@@ -85,7 +73,7 @@ export const specialties = [
   ['Andropausa', 'Investigação hormonal masculina com foco em vitalidade, composição corporal, performance e bem-estar.'],
   ['Longevidade', 'Estratégias de prevenção e acompanhamento para vitalidade, saúde metabólica e envelhecimento saudável.'],
   ['Peptídeos', 'Protocolos integrativos sob avaliação clínica, alinhados às necessidades e aos objetivos de cada paciente.'],
-  ['Terapias regenerativas', 'Tecnologias e estímulos biológicos voltados à recuperação, qualidade tecidual e performance.'],
+  ['Terapias regenerativas', 'Recursos terapêuticos e estímulos biológicos voltados à recuperação, qualidade tecidual e performance.'],
   ['Emagrecimento avançado', 'Condutas personalizadas para metabolismo, composição corporal, rotina e acompanhamento contínuo.'],
   ['Tratamento capilar', 'Avaliação individualizada do couro cabeludo e protocolos para fortalecimento e saúde capilar.'],
   ['Spa capilar', 'Cuidado terapêutico e sensorial integrado à avaliação e aos objetivos de saúde do couro cabeludo.'],
@@ -143,45 +131,52 @@ export const protocols = [
 
 export const team = [
   {
-    name: 'Dra. Renata Bogéa',
-    role: 'Medicina hormonal e regenerativa',
-    image: '/assets/renata2.jpeg',
-    bio: 'Atendimento orientado por ciência, individualização e integração entre saúde, performance e naturalidade.',
-  },
-  {
     name: 'Dra. Carolina Rabelo',
-    // TODO: validar especialidade e mini bio oficiais com o cliente.
-    role: 'Especialista Núcleo RB',
+    role: 'Dermatologia',
     image: '/assets/nrb1.jpeg',
     bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
   },
   {
     name: 'Dra. Dmylla Ribeiro',
-    // TODO: validar especialidade e mini bio oficiais com o cliente.
-    role: 'Especialista Núcleo RB',
+    role: 'Expert em Injetáveis',
     image: '/assets/nrb2.jpeg',
     bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
   },
   {
     name: 'Dr. Erison Lamar',
-    // TODO: validar especialidade e mini bio oficiais com o cliente.
-    role: 'Especialista Núcleo RB',
+    role: 'Ginecologia',
     image: '/assets/nrb3.jpeg',
     bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
   },
   {
     name: 'Rosana Câmera',
-    // TODO: validar cargo e mini bio oficiais com o cliente.
-    role: 'Equipe Núcleo RB',
+    role: 'Estética avançada',
     image: '/assets/nrb4.jpeg',
     bio: 'Parte da equipe dedicada a oferecer uma jornada acolhedora, organizada e atenta a cada paciente.',
   },
   {
     name: 'Dafne Dias',
-    // TODO: validar cargo e mini bio oficiais com o cliente.
-    role: 'Equipe Núcleo RB',
+    role: 'Estética avançada',
     image: '/assets/nrb5.jpeg',
     bio: 'Parte da equipe dedicada a oferecer uma jornada acolhedora, organizada e atenta a cada paciente.',
+  },
+  {
+    name: 'Claudia Soares',
+    role: 'Nutricionista',
+    image: '',
+    bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
+  },
+  {
+    name: 'Rafaela Serpa',
+    role: 'Nutricionista',
+    image: '',
+    bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
+  },
+  {
+    name: 'Dra. Maria Nunes',
+    role: 'Médica de saúde mental',
+    image: '',
+    bio: 'Atuação integrada à experiência de cuidado individualizado e ao acompanhamento dos pacientes do Núcleo RB.',
   },
 ]
 
@@ -203,16 +198,16 @@ export const gallery = [
   {
     title: 'Spa capilar',
     description:
-      'Ritual de cuidado capilar com experiência sensorial, tecnologia e personalização.',
+      'Ritual de cuidado capilar com experiência sensorial, recursos avançados e personalização.',
     image: '/assets/spa-capilar.jpg',
     alt: 'Spa capilar do Núcleo RB',
   },
   {
-    title: 'Tecnologias',
+    title: 'Recursos',
     description:
       'Equipamentos e protocolos integrados ao plano individual de cada paciente.',
     image: '/assets/tecnologias.jpg',
-    alt: 'Tecnologias e equipamentos do Núcleo RB',
+    alt: 'Recursos e equipamentos do Núcleo RB',
   },
   {
     title: 'Detalhes da estrutura',

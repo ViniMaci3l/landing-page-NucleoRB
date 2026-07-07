@@ -710,8 +710,7 @@ section {
 }
 
 .about-photo img,
-.team-photo img,
-.gallery-photo img {
+.team-photo img {
   display: block;
   width: 100%;
   height: 100%;
@@ -806,10 +805,15 @@ section {
 
 .gallery-photo {
   position: relative;
-  height: clamp(300px, 26vw, 360px);
+  height: clamp(280px, 24vw, 360px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   margin: 0;
-  background: var(--nude);
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 250, 242, 0.78), transparent 42%),
+    linear-gradient(145deg, #f8f1e8, #eadcca);
 }
 
 .gallery-photo::after {
@@ -823,13 +827,17 @@ section {
 }
 
 .gallery-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   object-position: center center;
   filter: saturate(0.96) contrast(0.99);
   transition: transform 700ms ease;
 }
 
 .gallery-card:hover .gallery-photo img {
-  transform: scale(1.03);
+  transform: scale(1.012);
 }
 
 .booking-section {
@@ -1178,7 +1186,7 @@ section {
   }
 
   .gallery-photo {
-    height: clamp(250px, 48vw, 320px);
+    height: clamp(240px, 42vw, 320px);
   }
 }
 
@@ -1278,7 +1286,7 @@ section {
   }
 
   .gallery-photo {
-    height: clamp(220px, 64vw, 280px);
+    height: clamp(220px, 58vw, 300px);
   }
 
   .floating-action,

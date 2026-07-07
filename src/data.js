@@ -186,27 +186,31 @@ export const gallery = [
     description:
       'Ambiente de chegada com atmosfera reservada, sofisticada e acolhedora.',
     image: '/assets/recepcao-real.jpg',
-    alt: 'Recepção premium do Núcleo RB',
+    alt: 'Recepção do Núcleo RB',
+    imagePosition: 'center 45%',
   },
   {
     title: 'Consultório',
     description:
       'Espaço de avaliação pensado para privacidade, conforto e cuidado individualizado.',
     image: '/assets/consultorio-real.jpg',
-    alt: 'Consultório real do Núcleo RB',
+    alt: 'Consultório do Núcleo RB',
+    imagePosition: 'center center',
   },
   {
     title: 'Sala de procedimentos',
     description:
       'Ambiente preparado para protocolos personalizados com precisão e segurança.',
     image: '/assets/sala-procedimentos-real.jpg',
-    alt: 'Sala de procedimentos real do Núcleo RB',
+    alt: 'Sala de procedimentos do Núcleo RB',
+    imagePosition: 'center 48%',
   },
   {
     title: 'Ambiente premium',
     description:
       'Detalhes de estrutura, acabamento e atmosfera alinhados à experiência premium.',
     image: '/assets/ambiente-premium-real.jpg',
-    alt: 'Ambiente premium real do Núcleo RB',
+    alt: 'Ambiente premium do Núcleo RB',
+    imagePosition: 'center 42%',
   },
 ]

@@ -375,7 +375,12 @@ function ExperienceSection() {
         {gallery.map((item, index) => (
           <article className={`gallery-card reveal item-${index}`} key={item.title}>
             <figure className="gallery-photo">
-              <img src={item.image} alt={item.alt} loading="lazy" />
+              <img
+                src={item.image}
+                alt={item.alt}
+                loading="lazy"
+                style={{ objectPosition: item.imagePosition }}
+              />
             </figure>
             <div>
               <h3>{item.title}</h3>

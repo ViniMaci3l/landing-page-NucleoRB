@@ -187,7 +187,7 @@ export const gallery = [
       'Ambiente de chegada com atmosfera reservada, sofisticada e acolhedora.',
     image: '/assets/recepcao-real.jpg',
     alt: 'Recepção do Núcleo RB',
-    imagePosition: 'center center',
+    imagePosition: 'center 45%',
   },
   {
     title: 'Consultório',
@@ -203,7 +203,7 @@ export const gallery = [
       'Ambiente preparado para protocolos personalizados com precisão e segurança.',
     image: '/assets/sala-procedimentos-real.jpg',
     alt: 'Sala de procedimentos do Núcleo RB',
-    imagePosition: 'center center',
+    imagePosition: 'center 42%',
   },
   {
     title: 'Ambiente premium',
@@ -211,6 +211,6 @@ export const gallery = [
       'Detalhes de estrutura, acabamento e atmosfera alinhados à experiência premium.',
     image: '/assets/ambiente-premium-real.jpg',
     alt: 'Ambiente premium do Núcleo RB',
-    imagePosition: 'center center',
+    imagePosition: 'center 55%',
   },
 ]

@@ -379,7 +379,7 @@ function ExperienceSection() {
                 src={item.image}
                 alt={item.alt}
                 loading="lazy"
-                style={{ objectPosition: item.imagePosition }}
+                style={{ objectPosition: item.imagePosition || 'center center' }}
               />
             </figure>
             <div>

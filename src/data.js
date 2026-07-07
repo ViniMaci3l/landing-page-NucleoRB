@@ -163,19 +163,19 @@ export const team = [
   {
     name: 'Claudia Soares',
     role: 'Nutricionista',
-    image: '',
+    image: '/assets/claudia-soares.png',
     bio: 'Acompanhamento nutricional integrado aos protocolos de saúde, performance e bem-estar.',
   },
   {
     name: 'Rafaela Serpa',
     role: 'Nutricionista',
-    image: '',
+    image: '/assets/rafaela-serpa.png',
     bio: 'Acompanhamento nutricional integrado aos protocolos de saúde, performance e bem-estar.',
   },
   {
     name: 'Dra. Maria Nunes',
     role: 'Médica de saúde mental',
-    image: '',
+    image: '/assets/maria-nunes.png',
     bio: 'Cuidado em saúde mental integrado à jornada de bem-estar e individualidade do paciente.',
   },
 ]
@@ -185,35 +185,28 @@ export const gallery = [
     title: 'Recepção',
     description:
       'Ambiente de chegada com atmosfera reservada, sofisticada e acolhedora.',
-    image: '/assets/recepcao.jpg',
+    image: '/assets/recepcao-real.jpg',
     alt: 'Recepção premium do Núcleo RB',
   },
   {
-    title: 'Consultórios',
+    title: 'Consultório',
     description:
-      'Espaços pensados para avaliação, privacidade, conforto e cuidado individualizado.',
-    image: '/assets/consultorios.jpg',
-    alt: 'Consultórios do Núcleo RB',
+      'Espaço de avaliação pensado para privacidade, conforto e cuidado individualizado.',
+    image: '/assets/consultorio-real.jpg',
+    alt: 'Consultório real do Núcleo RB',
   },
   {
-    title: 'Spa capilar',
+    title: 'Sala de procedimentos',
     description:
-      'Ritual de cuidado capilar com experiência sensorial, recursos avançados e personalização.',
-    image: '/assets/spa-capilar.jpg',
-    alt: 'Spa capilar do Núcleo RB',
+      'Ambiente preparado para protocolos personalizados com precisão e segurança.',
+    image: '/assets/sala-procedimentos-real.jpg',
+    alt: 'Sala de procedimentos real do Núcleo RB',
   },
   {
-    title: 'Recursos',
+    title: 'Ambiente premium',
     description:
-      'Equipamentos e protocolos integrados ao plano individual de cada paciente.',
-    image: '/assets/tecnologias.jpg',
-    alt: 'Recursos e equipamentos do Núcleo RB',
-  },
-  {
-    title: 'Detalhes da estrutura',
-    description:
-      'Materiais, luz, acabamento e atmosfera pensados como parte da experiência premium.',
-    image: '/assets/detalhes-estrutura.jpg',
-    alt: 'Detalhes da estrutura premium do Núcleo RB',
+      'Detalhes de estrutura, acabamento e atmosfera alinhados à experiência premium.',
+    image: '/assets/ambiente-premium-real.jpg',
+    alt: 'Ambiente premium real do Núcleo RB',
   },
 ]
